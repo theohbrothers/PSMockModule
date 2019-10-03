@@ -9,7 +9,7 @@
     GUID = '127aad2a-7be1-4a9e-ae60-e53625712540'
     Author = 'The Oh Brothers'
     CompanyName = 'The Oh Brothers'
-    Copyright = '(c) 2019 The Oh Brothers.'
+    Copyright = '(c) 2019 The Oh Brothers'
     Description = 'A mock powershell module for templating and reference.'
     PowerShellVersion = '3.0'
     # PowerShellHostName = ''
