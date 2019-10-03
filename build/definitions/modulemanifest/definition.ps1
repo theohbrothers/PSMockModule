@@ -41,7 +41,7 @@
                 'template'
                 'psgallery'
             )
-            LicenseUri = 'https://github.com/theohbrothers/PSMockModule/blob/master/LICENSE'
+            LicenseUri = 'https://raw.githubusercontent.com/theohbrothers/PSMockModule/master/LICENSE'
             ProjectUri = 'https://github.com/theohbrothers/PSMockModule'
             # IconUri = ''
             # ReleaseNotes = ''
