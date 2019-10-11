@@ -48,7 +48,7 @@ To import the module:
 Import-Module -Name PSMockModule -Force -Verbose
 
 # Import the git submodule
-Import-Module .\path\to\PSMockModule\PSMockModule.psm1 -Force -Verbose
+Import-Module .\src\PSMockModule\PSMockModule.psm1 -Force -Verbose
 ```
 
 To list all available functions:
