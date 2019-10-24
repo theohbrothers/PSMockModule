@@ -49,7 +49,7 @@ stages:
       submodules: recursive
     - template: templates/azure-pipelines/entrypoint/windows/powershell/continuous-build.yml@PSModulePublisher
   - job: linux
-    displayName: '[Linux]'
+    displayName: '[Linux] PowerShell Core'
     pool:
       vmImage: ubuntu-16.04
     steps:
@@ -72,7 +72,7 @@ stages:
       submodules: recursive
     - template: templates/azure-pipelines/entrypoint/linux/continuous-build.yml@PSModulePublisher
   - job: macos
-    displayName: '[macOS]'
+    displayName: '[macOS] PowerShell Core'
     pool:
       vmImage: macOS-10.14
     steps:
@@ -97,7 +97,7 @@ stages:
   dependsOn: publish
   jobs:
   - job: linux_container
-    displayName: '[Linux] [Container]'
+    displayName: '[Linux] [Container] PowerShell Core'
     pool:
       vmImage: ubuntu-16.04
     container: joeltimothyoh/powershell:6.1.0-ubuntu-18.04-git
