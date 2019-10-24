@@ -10,7 +10,7 @@
     Author = 'The Oh Brothers'
     CompanyName = 'The Oh Brothers'
     Copyright = '(c) 2019 The Oh Brothers'
-    Description = 'A mock powershell module for templating and reference.'
+    Description = 'A mock PowerShell module for templating and reference.'
     PowerShellVersion = '3.0'
     # PowerShellHostName = ''
     # PowerShellHostVersion = ''
