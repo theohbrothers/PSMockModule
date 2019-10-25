@@ -16,6 +16,17 @@ try {
     }
     Get-Module Pester -ListAvailable
 
+    if ($env:OS -ne 'Windows_NT') {
+        if ($IsLinux) {
+            "Installing dependencies for linux" | Write-Host
+        }
+        if ($IsMacOS) {
+            "Installing dependencies for MacOS" | Write-Host
+        }
+    }else {
+        "Installing dependencies for Windows" | Write-Host
+    }
+
 }catch {
     throw
 }finally{
