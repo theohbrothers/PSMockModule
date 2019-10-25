@@ -18,12 +18,14 @@ $functionTestScriptBlock = {
     }
 }
 
+# Function: Mock-Function1
 $cmd = "Mock-Function1"
 $cmdArgs = @{
     Verbose = $true
 }
 & $functionTestScriptBlock
 
+# Function: Mock-Function2
 $cmd = "Mock-Function2"
 $cmdArgs = @{
     Verbose = $true
