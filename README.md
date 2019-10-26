@@ -5,13 +5,15 @@
 [badge-build-azuredevops-build-img]: https://img.shields.io/azure-devops/build/theohbrothers/PSMockModule/7/master.svg?label=build&logo=azure-pipelines&style=flat-square
 [badge-build-azuredevops-build-src]: https://dev.azure.com/theohbrothers/PSMockModule/_build?definitionId=7
 [badge-version-github-release-img]: https://img.shields.io/github/v/release/theohbrothers/PSMockModule?style=flat-square
-[badge-version-github-release-src]: https://github.com/joeltimothyoh/PSMockModule/releases
+[badge-version-github-release-src]: https://github.com/theohbrothers/PSMockModule/releases
 [badge-version-powershellgallery-releases-img]: https://img.shields.io/powershellgallery/v/PSMockModule?logo=powershell&logoColor=white&label=PSGallery&labelColor=&style=flat-square
 [badge-version-powershellgallery-releases-src]: https://www.powershellgallery.com/packages/PSMockModule/
 
 ## Introduction
 
 A mock PowerShell module for templating and reference.
+
+## Requirements
 
 - [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-windows-powershell?view=powershell-5.1) or [PowerShell Core](https://github.com/powershell/powershell#-powershell).
 
