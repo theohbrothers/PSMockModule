@@ -42,6 +42,11 @@ Install-Module -Name PSMockModule -Repository PSGallery -Scope AllUsers -Verbose
 
 ### Functions
 
+```powershell
+Mock-Function1 [<CommonParameters>]
+Mock-Function2 [<CommonParameters>]
+```
+
 To run Mock-Function1:
 
 ```powershell
