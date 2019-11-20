@@ -15,7 +15,7 @@ A mock PowerShell module for templating and reference.
 
 ## Requirements
 
-- [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-windows-powershell?view=powershell-5.1) or [PowerShell Core](https://github.com/powershell/powershell#-powershell).
+- [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-windows-powershell) or [PowerShell Core](https://github.com/powershell/powershell#-powershell).
 
 ## Installation
 
