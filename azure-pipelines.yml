@@ -43,7 +43,7 @@ stages:
     steps:
     - checkout: self
       submodules: recursive
-    - template: templates/azure-pipelines/entrypoint/windows/build-test.yml@PSModulePublisher
+    - template: templates/azure-pipelines/entrypoint/windows/powershell/build-test.yml@PSModulePublisher
   # - job: windows_powershell_5_0
   #   displayName: '[Windows] PowerShell 5.0'
   #   pool:
