@@ -84,7 +84,7 @@ stages:
   - job: macos
     displayName: '[macOS] PowerShell Core'
     pool:
-      vmImage: macOS-13
+      vmImage: macos-14
     steps:
     - checkout: self
       submodules: recursive
