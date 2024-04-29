@@ -28,16 +28,16 @@ stages:
 - stage: build_test
   displayName: Build, Test
   jobs:
-  - job: windows_pwsh
-    displayName: '[Windows] PowerShell Core'
+  - job: windows_2022_pwsh
+    displayName: '[Windows Server 2022] PowerShell Core'
     pool:
       vmImage: windows-2022
     steps:
     - checkout: self
       submodules: recursive
     - template: templates/azure-pipelines/entrypoint/windows/build-test.yml@PSModulePublisher
-  - job: windows_powershell_5_1
-    displayName: '[Windows] PowerShell 5.1'
+  - job: windows_2019_powershell_5_1
+    displayName: '[Windows Server 2019] PowerShell 5.1'
     pool:
       vmImage: windows-2019
     steps:
@@ -52,16 +52,16 @@ stages:
   #   - checkout: self
   #     submodules: recursive
   #   - template: templates/azure-pipelines/entrypoint/windows/powershell/continuous-build.yml@PSModulePublisher
-  - job: linux
-    displayName: '[Linux] PowerShell Core'
+  - job: ubuntu_2204_pwsh
+    displayName: '[Ubuntu 22.04] PowerShell Core'
     pool:
       vmImage: ubuntu-22.04
     steps:
     - checkout: self
       submodules: recursive
     - template: templates/azure-pipelines/entrypoint/linux/build-test.yml@PSModulePublisher
-  - job: linux_container
-    displayName: '[Linux] [Container] PowerShell'
+  - job: ubuntu_2204_container
+    displayName: '[Ubuntu 22.04] [Container] PowerShell'
     pool:
       vmImage: ubuntu-22.04
     strategy:
@@ -81,8 +81,8 @@ stages:
     - checkout: self
       submodules: recursive
     - template: templates/azure-pipelines/entrypoint/linux/build-test.yml@PSModulePublisher
-  - job: macos
-    displayName: '[macOS] PowerShell Core'
+  - job: macos_14_pwsh
+    displayName: '[macOS 14] PowerShell Core'
     pool:
       vmImage: macos-14
     steps:
@@ -93,8 +93,8 @@ stages:
   displayName: Publish
   dependsOn: build_test
   jobs:
-  - job: windows_powershell_5_1
-    displayName: '[Windows] PowerShell 5.1'
+  - job: windows_2019_powershell_5_1
+    displayName: '[Windows Server 2019] PowerShell 5.1'
     pool:
       vmImage: windows-2019
     steps:
@@ -105,8 +105,8 @@ stages:
   displayName: Release
   dependsOn: publish
   jobs:
-  - job: linux_container
-    displayName: '[Linux] [Container] PowerShell Core'
+  - job: ubuntu_2204_container
+    displayName: '[Ubuntu 22.04] [Container] PowerShell Core'
     pool:
       vmImage: ubuntu-22.04
     container: joeltimothyoh/powershell:7.3.9-ubuntu-22.04-git
