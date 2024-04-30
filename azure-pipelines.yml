@@ -28,7 +28,7 @@ stages:
 - stage: build_test
   displayName: Build, Test
   jobs:
-  - job: windows_2022_pwsh
+  - job: windows_2022_powershell_core
     displayName: '[Windows Server 2022] PowerShell Core'
     pool:
       vmImage: windows-2022
@@ -52,7 +52,7 @@ stages:
   #   - checkout: self
   #     submodules: recursive
   #   - template: templates/azure-pipelines/entrypoint/windows/powershell/continuous-build.yml@PSModulePublisher
-  - job: ubuntu_2204_pwsh
+  - job: ubuntu_2204_powershell_core
     displayName: '[Ubuntu 22.04] PowerShell Core'
     pool:
       vmImage: ubuntu-22.04
@@ -60,7 +60,7 @@ stages:
     - checkout: self
       submodules: recursive
     - template: templates/azure-pipelines/entrypoint/linux/build-test.yml@PSModulePublisher
-  - job: ubuntu_2204_container
+  - job: ubuntu_2204_container_powershell_core
     displayName: '[Ubuntu 22.04] [Container] PowerShell'
     pool:
       vmImage: ubuntu-22.04
@@ -81,7 +81,7 @@ stages:
     - checkout: self
       submodules: recursive
     - template: templates/azure-pipelines/entrypoint/linux/build-test.yml@PSModulePublisher
-  - job: macos_14_pwsh
+  - job: macos_14_powershell_core
     displayName: '[macOS 14] PowerShell Core'
     pool:
       vmImage: macos-14
@@ -105,7 +105,7 @@ stages:
   displayName: Release
   dependsOn: publish
   jobs:
-  - job: ubuntu_2204_container
+  - job: ubuntu_2204_container_powershell_core
     displayName: '[Ubuntu 22.04] [Container] PowerShell Core'
     pool:
       vmImage: ubuntu-22.04
