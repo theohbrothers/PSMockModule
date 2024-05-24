@@ -1,5 +1,6 @@
 Describe "PSMockModule" -Tag 'Integration' {
     BeforeAll {
+        $ErrorView = 'NormalView'
     }
     BeforeEach {
     }
