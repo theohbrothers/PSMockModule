@@ -1,13 +1,8 @@
 # PSMockModule
 
-[![badge-build-azuredevops-build-img][]][badge-build-azuredevops-build-src] [![badge-version-github-release-img][]][badge-version-github-release-src] [![badge-version-powershellgallery-releases-img][]][badge-version-powershellgallery-releases-src]
-
-[badge-build-azuredevops-build-img]: https://img.shields.io/azure-devops/build/theohbrothers/PSMockModule/7/master.svg?label=build&logo=azure-pipelines&style=flat-square
-[badge-build-azuredevops-build-src]: https://dev.azure.com/theohbrothers/PSMockModule/_build?definitionId=7
-[badge-version-github-release-img]: https://img.shields.io/github/v/release/theohbrothers/PSMockModule?style=flat-square
-[badge-version-github-release-src]: https://github.com/theohbrothers/PSMockModule/releases
-[badge-version-powershellgallery-releases-img]: https://img.shields.io/powershellgallery/v/PSMockModule?logo=powershell&logoColor=white&label=PSGallery&labelColor=&style=flat-square
-[badge-version-powershellgallery-releases-src]: https://www.powershellgallery.com/packages/PSMockModule/
+[![azuredevops-build](https://img.shields.io/azure-devops/build/theohbrothers/PSMockModule/7/master.svg?label=build&logo=azure-pipelines&style=flat-square)](https://dev.azure.com/theohbrothers/PSMockModule/_build?definitionId=7)
+[![github-release](https://img.shields.io/github/v/release/theohbrothers/PSMockModule?style=flat-square)](https://github.com/theohbrothers/PSMockModule/releases)
+[![powershellgallery-version](https://img.shields.io/powershellgallery/v/PSMockModule?logo=powershell&logoColor=white&label=PSGallery&labelColor=&style=flat-square)](https://www.powershellgallery.com/packages/PSMockModule)
 
 ## Introduction
 
