@@ -85,8 +85,8 @@ stages:
     - checkout: self
       submodules: recursive
     - template: templates/azure-pipelines/entrypoint/macos/build-test.yml@PSModulePublisher
-- stage: publish
-  displayName: Publish
+- stage: build_publish
+  displayName: Build, Publish
   dependsOn: build_test
   jobs:
   - job: windows_2019_powershell_5_1
@@ -99,7 +99,7 @@ stages:
     - template: templates/azure-pipelines/entrypoint/windows/powershell/build-publish.yml@PSModulePublisher
 - stage: release
   displayName: Release
-  dependsOn: publish
+  dependsOn: build_publish
   jobs:
   - job: ubuntu_2204_container_powershell_core
     displayName: '[Ubuntu 22.04] [Container] PowerShell Core'
