@@ -1,7 +1,7 @@
 trigger:
   branches:
     include:
-    - '*'
+    - master
   tags:
     include:
     - '*'
@@ -9,7 +9,7 @@ pr:
   autoCancel: false
   branches:
     include:
-    - '*'
+    - master
 
 resources:
   repositories:
@@ -17,7 +17,7 @@ resources:
     type: github
     name: theohbrothers/PSModulePublisher
     endpoint: theohbrothers
-    ref: refs/tags/v0.7.0
+    ref: refs/tags/v0.9.0
   - repository: PSRepositoryReleaseManager
     type: github
     name: theohbrothers/PSRepositoryReleaseManager
